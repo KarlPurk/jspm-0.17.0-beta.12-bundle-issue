@@ -7,8 +7,12 @@
     "jspm": "^0.17.0-beta.12"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-bundle": "node_modules/.bin/hs www/ -e bundle.html -o",
+    "test": "node_modules/.bin/hs www/ -o"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
 }
